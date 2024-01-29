@@ -7,12 +7,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: background-color 0.5s ease;
 }
 
 :root {
   --text-color:white;
   --bg-color:black;
   --invert-stars:0;
+  --transition-duration: 0.012s;
   --inner-square:black;
   --surface-color:rgba(255, 255, 255, 0.05);
   --stroke-color:rgba(255, 255, 255, 0.5);
@@ -25,7 +27,7 @@
   --text-color:black;
   --bg-color:white;
   --invert-stars:1;
-  --inner-square:white;
+  --inner-square: rgb(235, 235, 235);
   --surface-color:rgba(0, 0, 0, 0.0.05);
   --stroke-color:rgba(0, 0, 0, 0.5);
   --surface-color-hover:rgba(0, 0, 0, 0.2);
@@ -99,24 +101,38 @@ body * {
 }
 
 .profile-bg {
-  opacity: 50%;
+  opacity: 70%;
 }
 
 #switch {
-  display: flex;
+  display: block;
+  width: 48px;
+  height: 24px;
+  background: var(--switch-color);
+  backdrop-filter: blur(4px);
+  border-radius: 25px;
+  
+  margin: auto;
   justify-content: center;
-  position: relative;
+  align-items: center;
 }
 
 #switch button {
-  display: block;
-  width: 54px;
-  height: 24px;
-  background: var(--switch-color);
-  border: 0;
-  backdrop-filter: blur(4px);
+  margin: 3px;
+  width: 18px;
+  height: 18px;
+  background-color: black;
   border-radius: 25px;
-  transition: background-color 0.2s ease;
+  border: 0;
+
+  position: absolute;
+  left: 0;
+
+  animation: slide-out .2s forwards;
+}
+
+.lightTheme #switch button {
+  animation: slide-in .2s forwards;
 }
 
 .inner-square {
@@ -298,6 +314,7 @@ footer {
     background-size: cover;
     mix-blend-mode: soft-light;
     filter: invert(var(--invert-stars));
+    transition: filter var(--transition-duration);
 }
 
 .stars2 {
@@ -311,5 +328,24 @@ footer {
     background-size: cover;
     mix-blend-mode: soft-light;
     filter: invert(var(--invert-stars));
-  opacity: 70%;
+    transition: filter var(--transition-duration);
+}
+
+/* media queries */
+@keyframes slide-in {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes slide-out {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
+  }
 }
