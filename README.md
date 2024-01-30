@@ -16,10 +16,11 @@ Programa exclusivo e gratuito, promovido pela Rocketseat para ensino de tecnolog
 
 <br>
 
-<p align="center">
+<picture align="center">
   <source media="(prefers-color-scheme: dark)" srcset=".github/preview.png">
   <source media="(prefers-color-scheme: light)" srcset=".github/preview-light.png">
-</p>
+  <img alt="DevLinks project" src=".github/preview.png">
+</picture>
 
 ## 🚀 Tecnologias
 
