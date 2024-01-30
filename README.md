@@ -1,7 +1,7 @@
 <h1 align="center"> DevLinks </h1>
 
 <p align="center">
-Evento exclusivo e gratuito, promovido pela Rocketseat para ensino de tecnologias WEB.
+Programa exclusivo e gratuito, promovido pela Rocketseat para ensino de tecnologias WEB. <br/>
 </p>
 
 <p align="center">
@@ -17,7 +17,9 @@ Evento exclusivo e gratuito, promovido pela Rocketseat para ensino de tecnologia
 <br>
 
 <p align="center">
-  <img alt="calendario da copa" src=".github/preview.jpg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset=".github/preview.jpg">
+  <source media="(prefers-color-scheme: light)" srcset=".github/preview-light.jpg">
+  <img alt="DevLinks project" src=".github/preview.jpg">
 </p>
 
 ## 🚀 Tecnologias
@@ -27,15 +29,17 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - HTML e CSS
 - JavaScript
 - Git e Github
+- Figma
+- Affinity Designer 2
 
 ## 💻 Projeto
 
-O Calendário da Copa é um projeto que mostra os jogos da Copa de 2022.
+O DevLinks é um agregador de links para usar como cartão de visitas online.
+
+- [Acesse o projeto finalizado, online](https://maykbrito.github.io/devlinks)
+
+- [Assistir aulas](https://lp.rocketseat.com.br/devlinks/inscricao?utm_source=github&utm_medium=descricao&utm_campaign=capture-devlinks&utm_term=organic&utm_content=descricao-github-mayk-brito)
 
 ## :memo: Licença
 
 Esse projeto está sob a licença MIT.
-
----
-
-Feito com ♥ por Jean Pereira e Rocketseat :wave: [Participe da nossa comunidade!](https://discord.gg/rocketseat)
